@@ -1,5 +1,5 @@
 // Raffle
-
+// Stoped @ 14:14
 //Enter the lottery
 // PICK WInner
 // Winner picked X minutes

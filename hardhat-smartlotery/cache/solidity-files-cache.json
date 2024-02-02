@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/workspace/Lottery/hardhat-smartlotery/contracts/Raffle.sol": {
-      "lastModificationDate": 1706808843395,
-      "contentHash": "cac0bbd80e61847ea85e34620ea25b0f",
+      "lastModificationDate": 1706897621090,
+      "contentHash": "0c80c88c04d4e3fe2a927a376c337337",
       "sourceName": "contracts/Raffle.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -36,7 +36,9 @@
         }
       },
       "imports": [
-        "node_modules/@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol"
+        "node_modules/@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol",
+        "node_modules/@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
+        "node_modules/@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol"
       ],
       "versionPragmas": [
         "^0.8.7"
@@ -85,6 +87,90 @@
       ],
       "artifacts": [
         "VRFConsumerBaseV2"
+      ]
+    },
+    "/workspace/Lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol": {
+      "lastModificationDate": 1706890360716,
+      "contentHash": "4c0aa4a1199644691c779f07e1fec059",
+      "sourceName": "node_modules/@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "VRFCoordinatorV2Interface"
+      ]
+    },
+    "/workspace/Lottery/node_modules/@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol": {
+      "lastModificationDate": 1706894943092,
+      "contentHash": "f2b8875f95ae4eda929ab30c9bf67d27",
+      "sourceName": "node_modules/@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "KeeperCompatibleInterface"
       ]
     }
   }

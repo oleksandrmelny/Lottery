@@ -1,7 +1,7 @@
 const { network } = require("hardhat");
 const { ethers } = require("ethers"); 
 const { developmentChains} = require("../../helper-hardhat-config");
-const BASEFEE = ethers.parseEther("0.25");// 0.25 is the primium. It cost 0.25 LINK per REQ
+const BASEFEE = ethers.utils.parseEther("0.25");// 0.25 is the primium. It cost 0.25 LINK per REQ
 const GAS_PRICE_LINK = 1e9; //link per gas. calculated value based on the gas of the chain
 
 
@@ -21,4 +21,4 @@ module.exports = async function({getNamedAccounts, deployments}){
     log("----------------------------------------------------")
     }
 }
-module.exports.tags = ["all", "mocks"]
+module.exports.tags = ["all", "VRFCoordinatorV2Mock"]
